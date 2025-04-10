@@ -4,7 +4,6 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
     private AudioSource audio_enemy;
-    private int direction;
     public float speed;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -12,7 +11,6 @@ public class Enemy : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         audio_enemy = GetComponent<AudioSource>();
-        direction = 1;
     }
 
     // Update is called once per frame

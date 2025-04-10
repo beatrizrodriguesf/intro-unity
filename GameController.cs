@@ -1,23 +1,24 @@
 using UnityEngine;
+using TMPro;
 
 public static class GameController
 {
-    private static int collectableCount;
-    private static int lifeCount;
+    public static int collectableCount;
+    public static int lifeCount;
     public static bool gameOver
     {
-        get {return collectableCount <= 0 || lifeCount <= 0;}
+        get {return collectableCount >= 5 || lifeCount <= 0;}
     }
 
     public static void Init()
     {
-        collectableCount = 5;
+        collectableCount = 0;
         lifeCount = 3;
     }
 
     public static void Collect()
     {
-        collectableCount--;
+        collectableCount++;
     }
 
     public static void Damage()
