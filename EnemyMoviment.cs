@@ -18,17 +18,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        Vector2 movement = new Vector2(1, 0);
-        rb.MovePosition(rb.position + movement*Time.fixedDeltaTime*speed*direction);
+        Vector2 movement = PlayerMovement.rb.position - rb.position;
+        rb.MovePosition(rb.position + movement*Time.fixedDeltaTime*speed);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "obstacle")
-        {
-            direction *= -1;
-        }
-        else if (other.tag == "Player")
+        if (other.tag == "Player")
         {
             audio_enemy.Play();
             GameController.Damage();

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public static Rigidbody2D rb;
     private AudioSource audio_collectable;
     public float speed;
     
