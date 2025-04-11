@@ -7,7 +7,7 @@ public static class GameController
     public static int lifeCount;
     public static bool gameOver
     {
-        get {return collectableCount >= 5 || lifeCount <= 0;}
+        get {return collectableCount >= 8 || lifeCount <= 0;}
     }
 
     public static void Init()

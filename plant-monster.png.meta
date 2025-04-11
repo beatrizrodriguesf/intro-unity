@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2b0f87845b33189439c2e791a04f6fd4
+guid: 58444f315b0831b45b4de5bb3d3dd6e6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7962762465593568552
-    second: forest-blob_0
+      213: -6816228570022180523
+    second: plant-monster_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: forest-blob_0
+      name: plant-monster_0
       rect:
         serializedVersion: 2
-        x: 72
-        y: 148
-        width: 290
-        height: 282
+        x: 48
+        y: 12
+        width: 317
+        height: 394
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d25b7fd9b59e7190800000000000000
-      internalID: -7962762465593568552
+      spriteID: 55985ffba34e761a0800000000000000
+      internalID: -6816228570022180523
       vertices: []
       indices: 
       edges: []
@@ -160,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      forest-blob_0: -7962762465593568552
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
